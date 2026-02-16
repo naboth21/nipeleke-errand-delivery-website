@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Nipelekee – Nairobi Errand & Delivery Services</title>
   <meta name="description" content="Nipelekee is Nairobi's fast, reliable errand and delivery service. Shopping, pharmacy runs, pick & drop, office errands and item sourcing." />
 
@@ -13,7 +12,7 @@
 
 <body>
 
-  <!-- Config is read by JavaScript -->
+  <!-- Config for JS -->
   <script>
     const NIPELEKEE = {
       whatsappNumber: '254723472911',
@@ -33,6 +32,7 @@
     };
   </script>
 
+  <!-- Top Bar -->
   <div class="topbar">
     <div class="wrap">
       <div>Available <strong>7 days a week</strong> • Nairobi-wide</div>
@@ -40,13 +40,13 @@
     </div>
   </div>
 
+  <!-- Header / Hero -->
   <header id="home">
     <div class="nav">
       <div class="brand">
-        <img id="logoImg" src="./logo.png" alt="Nipelekee Logo"
+        <img id="logoImg" src="logo.png" alt="Nipelekee Logo"
              onerror="this.style.display='none'; document.getElementById('logoFallback').style.display='block';" />
         <div id="logoFallback" style="display:none;">NIPELEKEE</div>
-
         <div class="name">
           <strong>NIPELEKEE</strong>
           <span>Nairobi Errand & Delivery Services</span>
@@ -73,12 +73,76 @@
     </div>
   </header>
 
-  <!-- === ALL SECTIONS (UNCHANGED) === -->
-  <!-- Services, How it works, Pricing, About, Request form, Contact, Admin dashboard, Footer -->
-  <!-- (These sections are exactly as you sent — no logic or style removed) -->
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="service-list">
+      <div class="service-item">
+        <img src="images/service1.png" alt="Shopping">
+        <h3>Shopping</h3>
+        <p>We pick and deliver your groceries or supplies fast.</p>
+      </div>
+      <div class="service-item">
+        <img src="images/service2.png" alt="Pharmacy Runs">
+        <h3>Pharmacy Runs</h3>
+        <p>Quick and reliable medicine pickups and deliveries.</p>
+      </div>
+      <!-- Add more services here -->
+    </div>
+  </section>
 
-  <iframe id="mapFrame" class="map"></iframe>
+  <!-- How It Works -->
+  <section id="how">
+    <h2>How It Works</h2>
+    <ol>
+      <li>Request a service via WhatsApp or the form.</li>
+      <li>We confirm and schedule your errand.</li>
+      <li>Delivery is completed safely and on time.</li>
+    </ol>
+  </section>
 
+  <!-- Pricing -->
+  <section id="pricing">
+    <h2>Pricing</h2>
+    <p>Transparent and honest pricing for all errands. Contact us for a quote.</p>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Nipelekee is Nairobi’s fast, reliable errand and delivery service. Our team is committed to making your life easier.</p>
+  </section>
+
+  <!-- Request Form -->
+  <section id="request">
+    <h2>Request a Service</h2>
+    <form id="requestForm">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <input type="email" name="email" placeholder="Email">
+      <textarea name="details" placeholder="Service Details" required></textarea>
+      <button type="submit" class="btn primary">Send Request</button>
+    </form>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:info@nipelekee.co.ke">info@nipelekee.co.ke</a></p>
+    <p>Phone/WhatsApp: <a href="#">0723 472 911</a></p>
+    <p>Service Area: Nairobi, Kenya</p>
+  </section>
+
+  <!-- Admin Dashboard -->
+  <section id="admin">
+    <h2>Admin Dashboard</h2>
+    <p>Admin panel (requires pin/token) to view requests.</p>
+  </section>
+
+  <!-- Map -->
+  <iframe id="mapFrame" class="map" src=""></iframe>
+
+  <!-- Footer -->
   <footer>
     <p><strong>NIPELEKEE</strong> — Nairobi Errand & Delivery Services</p>
     <p>You relax. We run.</p>
@@ -87,11 +151,10 @@
 
   <!-- WhatsApp Floating Button -->
   <a class="wa-float" id="waFloat" target="_blank" aria-label="Chat on WhatsApp">
-    <!-- SVG unchanged -->
+    <!-- Optional SVG for icon -->
   </a>
 
   <!-- JavaScript -->
   <script src="app.js" defer></script>
-
 </body>
 </html>
