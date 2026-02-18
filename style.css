@@ -340,11 +340,33 @@ footer {
   padding: 20px 0;         /* spacing above and below */
   background-color: white; /* optional: keeps top white */
 }
+  .header {
+  text-align: center;
+  margin-top: 20px;
+}
 
 .logo {
-  max-width: 200px;        /* adjust size if too big */
-  height: auto;            /* keeps proportions correct */
+  width: 120px; /* adjust size as needed */
+  height: auto;
+  display: block;
+  margin: 0 auto 10px auto;
 }
+
+.tagline {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+.availability {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 5px;
+}
+
+       
+           
+
 
 
 
