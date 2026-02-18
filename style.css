@@ -328,6 +328,14 @@ footer {
   padding: 20px;
   border-radius: 6px;
 }
+  .map-container {
+  width: 100%;
+  height: 350px; /* REQUIRED */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
 
 
 
