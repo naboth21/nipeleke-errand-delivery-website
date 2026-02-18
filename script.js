@@ -42,7 +42,22 @@ function logToGoogleSheets(data) {
     })
   }).catch(() => {});
 }
+document.addEventListener("DOMContentLoaded", () => {
+  const serviceHeaders = document.querySelectorAll(".service-header");
 
+  serviceHeaders.forEach(header => {
+    header.addEventListener("click", () => {
+      header.parentElement.classList.toggle("active");
+    });
+  });
+
+  const links = document.querySelectorAll(".service-content a");
+  links.forEach(link => {
+    link.addEventListener("click", e => {
+      e.stopPropagation();
+    });
+  });
+});
 /* === Request form logic === */
 /* === Admin dashboard logic === */
 /* === In-page tests === */
