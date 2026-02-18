@@ -72,6 +72,51 @@ footer {
   align-items: center;
   justify-content: center;
 }
+.service-item {
+  margin-bottom: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.service-header {
+  padding: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  background: #ff7a00;
+  color: white;
+  font-size: 16px;
+}
+
+.service-content {
+  display: none;
+  padding: 18px;
+}
+
+.service-item.active .service-content {
+  display: block;
+}
+
+.service-content ul {
+  padding-left: 18px;
+  margin-bottom: 15px;
+}
+
+.service-content li {
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.service-btn {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #25D366;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+}
 /* Pricing Section */
 #pricing {
     padding: 50px 20px;
@@ -283,5 +328,6 @@ footer {
   padding: 20px;
   border-radius: 6px;
 }
+
 
 
