@@ -335,6 +335,17 @@ footer {
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
+  .site-header {
+  text-align: center;      /* center the logo */
+  padding: 20px 0;         /* spacing above and below */
+  background-color: white; /* optional: keeps top white */
+}
+
+.logo {
+  max-width: 200px;        /* adjust size if too big */
+  height: auto;            /* keeps proportions correct */
+}
+
 
 
 
