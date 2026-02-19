@@ -11,8 +11,17 @@
 </head>
 
 <body>
-  <img src="images/myphoto.jpg" alt="Nipelekee Logo" class="top-logo">
-
+  <header id="home">
+    <div class="nav">
+      <div class="brand">
+        <img id="logoImg" src="logo.png" alt="Nipelekee Logo"
+             onerror="this.style.display='none'; document.getElementById('logoFallback').style.display='block';" />
+        <div id="logoFallback" style="display:none;">NIPELEKEE</div>
+        <div class="name">
+          <strong>NIPELEKEE</strong>
+          <span>Nairobi Errand & Delivery Services</span>
+        </div>
+      </div>
   
                     
                    
@@ -335,6 +344,7 @@ document.querySelectorAll(".service-content a").forEach(link => {
 });
 </script></body>
 </html>
+
 
 
 
