@@ -370,9 +370,23 @@ body {
   color: #555;
   margin-top: 5px;
 }
+  /* Ultra-small logo at very top */
+.top-logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 80px;   /* VERY small logo */
+  height: auto;
+}
+
+/* Remove all top spacing */
+body {
+  margin: 0;
+  padding: 0;
+}
 
        
            
+
 
 
 
