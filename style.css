@@ -439,6 +439,16 @@ body {
   background: white;
   border-bottom: 1px solid #eee;
 }
+header,
+nav,
+section {
+  margin-top: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
 
 
 
