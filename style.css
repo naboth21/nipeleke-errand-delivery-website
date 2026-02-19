@@ -345,11 +345,18 @@ footer {
   margin-top: 20px;
 }
 
-.logo {
-  width: 120px; /* adjust size as needed */
-  height: auto;
+/* Ultra-small logo at very top */
+.top-logo {
   display: block;
-  margin: 0 auto 10px auto;
+  margin: 0 auto;
+  max-width: 80px;   /* VERY small logo */
+  height: auto;
+}
+
+/* Remove all top spacing */
+body {
+  margin: 0;
+  padding: 0;
 }
 
 .tagline {
@@ -366,6 +373,7 @@ footer {
 
        
            
+
 
 
 
