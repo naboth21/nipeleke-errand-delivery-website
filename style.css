@@ -380,8 +380,8 @@ body {
 }
  /* WhatsApp-tab size logo */
 #logoImg {
-  width: 32px;     /* WhatsApp icon size */
-  height: 32px;
+  width: 28px;     /* WhatsApp icon size */
+  height: 28px;
   object-fit: cover;
   display: block;
 }
@@ -391,6 +391,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 
 
 
