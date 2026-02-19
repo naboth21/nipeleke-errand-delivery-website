@@ -548,6 +548,25 @@ body {
   font-weight: bold;
   text-align: center;
 }
+/* Remove any default spacing from the logo */
+img.logo {
+    margin: 0;
+    padding: 0;
+    display: block; /* prevents inline spacing */
+}
+
+/* Remove spacing from the tab */
+.available-tab {
+    margin: 0;
+    padding: 0;
+}
+
+/* Optional: make both align nicely */
+.header-container {
+    display: flex;
+    align-items: center; /* vertically aligns them */
+    gap: 0; /* no space between them */
+}
 
 
 
