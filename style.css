@@ -381,7 +381,7 @@ body {
  /* ===== HEADER ===== */
 .site-header {
   width: 100%;
-  padding: 8px 16px;
+  padding: 12px 12px;
   display: flex;
   align-items: center;
   background: white;
@@ -430,6 +430,7 @@ body {
   background: #f4f4f4;
   color: #333;
 }
+
 
 
 
