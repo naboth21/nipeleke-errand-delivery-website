@@ -378,26 +378,58 @@ body {
   color: #555;
   margin-top: 5px;
 }
- /* WhatsApp-tab size logo */
+ /* ===== HEADER ===== */
+.site-header {
+  width: 100%;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+
 #logoImg {
-  width: 28px;     /* WhatsApp icon size */
-  height: 28px;
-  object-fit: cover;
-  display: block;
+  width: 32px;       /* WhatsApp-tab size */
+  height: 32px;
+  object-fit: contain;
 }
 
-/* Remove top spacing */
-body {
-  margin: 0;
-  padding: 0;
+/* ===== HERO SECTION ===== */
+.hero {
+  padding: 24px 16px;
+  text-align: left;
 }
 
+.hero h1 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
 
+.hero p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 16px;
+}
 
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  text-decoration: none;
+  margin-right: 8px;
+}
 
+.whatsapp {
+  background: #25D366;
+  color: white;
+}
 
-
-
+.request {
+  background: #f4f4f4;
+  color: #333;
+}
 
 
 
