@@ -389,7 +389,7 @@ body {
 }
 
 #logoImg {
-  width: 48px;
+  width: 56px;
   height: 48px;
   object-fit: contain;
 }
@@ -430,6 +430,7 @@ body {
   background: #f4f4f4;
   color: #333;
 }
+
 
 
 
