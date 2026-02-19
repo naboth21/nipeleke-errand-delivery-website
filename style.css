@@ -379,19 +379,19 @@ body {
   margin-top: 5px;
 }
  /* WhatsApp-tab size logo */
-.top-logo {
-  display: block;
-  margin: 0 auto;
-  width: 32px;      /* WhatsApp icon size */
-  height: 32px;     /* forces exact icon size */
+#logoImg {
+  width: 32px;     /* WhatsApp icon size */
+  height: 32px;
   object-fit: cover;
+  display: block;
 }
 
-/* Remove all spacing so it sticks to the top */
+/* Remove top spacing */
 body {
   margin: 0;
   padding: 0;
 }
+
 
 
 
