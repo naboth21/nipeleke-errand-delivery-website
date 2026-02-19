@@ -345,12 +345,20 @@ footer {
   margin-top: 20px;
 }
 
-/* Ultra-small logo at very top */
+/* WhatsApp-tab size logo */
 .top-logo {
   display: block;
   margin: 0 auto;
-  max-width: 80px;   /* VERY small logo */
-  height: auto;
+  width: 32px;      /* WhatsApp icon size */
+  height: 32px;     /* forces exact icon size */
+  object-fit: cover;
+}
+
+/* Remove all spacing so it sticks to the top */
+body {
+  margin: 0;
+  padding: 0;
+}
 }
 
 /* Remove all top spacing */
@@ -370,20 +378,21 @@ body {
   color: #555;
   margin-top: 5px;
 }
-  /* Micro-size logo (very tiny) */
+ /* WhatsApp-tab size logo */
 .top-logo {
   display: block;
   margin: 0 auto;
-  max-width: 40px;   /* extremely small */
-  height: auto;
+  width: 32px;      /* WhatsApp icon size */
+  height: 32px;     /* forces exact icon size */
+  object-fit: cover;
 }
 
-/* Remove all spacing */
+/* Remove all spacing so it sticks to the top */
 body {
   margin: 0;
   padding: 0;
 }
-           
+
 
 
 
