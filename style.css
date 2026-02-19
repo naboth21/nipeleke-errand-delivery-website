@@ -389,8 +389,8 @@ body {
 }
 
 #logoImg {
-  width: 32px;       /* WhatsApp-tab size */
-  height: 32px;
+  width: 48px;
+  height: 48px;
   object-fit: contain;
 }
 
@@ -430,6 +430,7 @@ body {
   background: #f4f4f4;
   color: #333;
 }
+
 
 
 
