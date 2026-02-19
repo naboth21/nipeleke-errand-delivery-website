@@ -349,8 +349,8 @@ footer {
 .top-logo {
   display: block;
   margin: 0 auto;
-  width: 32px;      /* WhatsApp icon size */
-  height: 32px;     /* forces exact icon size */
+  width: 34px;      /* WhatsApp icon size */
+  height: 34px;     /* forces exact icon size */
   object-fit: cover;
 }
 
@@ -430,6 +430,7 @@ body {
   background: #f4f4f4;
   color: #333;
 }
+
 
 
 
