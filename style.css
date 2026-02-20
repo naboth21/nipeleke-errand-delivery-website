@@ -582,6 +582,11 @@ img.logo {
   text-decoration: none;
   font-weight: bold;
 }
+{
+  display: block;
+  text-align: center;
+}
+
 
 
 
