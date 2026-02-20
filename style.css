@@ -567,6 +567,22 @@ img.logo {
     align-items: center; /* vertically aligns them */
     gap: 0; /* no space between them */
 }
+/* Top info bar (Available 7 days a week...) */
+.top-bar {
+  background-color: #28c76f; /* Professional green */
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+/* Ensure links inside stay white */
+.top-bar a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 
 
 
