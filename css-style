@@ -260,7 +260,7 @@ footer {
     }
 /* ===== LOGO SIZE ===== */
 #logoImg {
-  width: 80px;
+  width: 100px;
   height: auto;
 }
 
@@ -297,6 +297,7 @@ footer {
   max-width: 420px;
   margin: 0 auto;
 }
+
 
 
 
