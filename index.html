@@ -336,8 +336,34 @@ document.querySelectorAll(".service-header").forEach(header => {
 document.querySelectorAll(".service-content a").forEach(link => {
   link.addEventListener("click", e => e.stopPropagation());
 });
-</script></body>
+</script> <header class="site-header">
+  <img id="logoImg" src="logo.png" alt="Nipelekee Logo">
+
+  <nav class="top-nav">
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>You relax. We run.</h1>
+  <p>Fast errands, safe deliveries…</p>
+</section>
+
+<section id="services" class="services">
+  <h2>Our Services</h2>
+
+  <div class="service-btns">
+    <a class="service-btn" href="#">Shopping & Pharmacy</a>
+    <a class="service-btn" href="#">Pick & Drop Deliveries</a>
+    <a class="service-btn" href="#">Market & Item Sourcing</a>
+    <a class="service-btn" href="#">Time-Based Errands</a>
+  </div>
+</section>
+</body>
 </html>
+
 
 
 
