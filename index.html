@@ -8,6 +8,8 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="style.css">
+  <script src="https://checkout.flutterwave.com/v3.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 
 <body>
@@ -263,23 +265,58 @@
         <img src="images/whatsapp-icon.png" alt="WhatsApp" style="width:24px; vertical-align: middle;">
         Chat on WhatsApp
     </a>
-</section>
+<button onclick="makePayment()">Pay Now</button>
 
- <section id="payment">
-  <h2>Payment Methods</h2>
+<script>
+  function makePayment() {
+    FlutterwaveCheckout({
+      public_key: "FLWPUBK_TEST-XXXXXXXXXXXX", // Replace with your key
+      tx_ref: "peleka-" + Date.now(),
+      amount: 500,
+      currency: "KES",
+      payment_options: "card, mobilemoney",
+      customer: {
+        email: "customer@email.com",
+        phonenumber: "07XXXXXXXX",
+        name: "Customer Name",
+      },
+      callback: function (response) {
+        if (response.status === "successful") {
+          generateReceipt(response);
+          alert("Payment Successful! Receipt downloading...");
+        }
+      },
+      onclose: function() {
+        console.log("Payment closed");
+      },
+      customizations: {
+        title: "Peleka Errand Service",
+        description: "Payment for errand service",
+      },
+    });
+  }
 
-  <div class="payment-method">
-    <h3>M-Pesa</h3>
-    <p>Paybill: <strong>254723472911</strong></p>
-    <p>Account: <strong>Your Name / Order ID</strong></p>
-  </div>
+  function generateReceipt(paymentData) {
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
 
-  <div class="payment-method">
-    <h3>Cash on Delivery</h3>
-    <p>Pay once your errand is completed.</p>
-  </div>
-</section>
-  
+    doc.setFontSize(18);
+    doc.text("Peleka Errand Service", 20, 20);
+
+    doc.setFontSize(12);
+    doc.text("Official Payment Receipt", 20, 30);
+
+    doc.text("Transaction Ref: " + paymentData.tx_ref, 20, 45);
+    doc.text("Payment ID: " + paymentData.transaction_id, 20, 55);
+    doc.text("Amount Paid: KES " + paymentData.amount, 20, 65);
+    doc.text("Payment Method: " + paymentData.payment_type, 20, 75);
+    doc.text("Date: " + new Date().toLocaleString(), 20, 85);
+
+    doc.text("Thank you for choosing Peleka!", 20, 105);
+
+    doc.save("Peleka_Receipt_" + paymentData.transaction_id + ".pdf");
+  }
+</script>
   <!-- Map -->
   <section id="map" class="section">
   <div class="container">
@@ -332,6 +369,7 @@ document.querySelectorAll(".service-content a").forEach(link => {
 </script> 
 </body>
 </html>
+
 
 
 
