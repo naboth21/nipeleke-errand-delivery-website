@@ -362,8 +362,37 @@ document.querySelectorAll(".service-content a").forEach(link => {
   link.addEventListener("click", e => e.stopPropagation());
 });
 </script> 
+
+  <button onclick="downloadReceipt('John Doe','customer@email.com',500,'M-Pesa')">
+  Download Receipt
+</button>
+
+<script>
+async function downloadReceipt(customer, email, amount, method) {
+  const response = await fetch(
+    "https://receipt-server.onrender.com/generate-receipt",
+    {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        customer: customer,
+        email: email,
+        amount: amount,
+        method: method
+      })
+    }
+  );
+
+  const blob = await response.blob();
+  const url = window.URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "receipt.pdf";
+  a.click();
+}
 </body>
 </html>
+
 
 
 
